@@ -1,0 +1,15 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss build -i src/main.css -o public/main.css --jit --minify --purge src/*.css public/*.html",
+    "watch": "tailwindcss build -i src/main.css -o public/main.css --jit --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^2.2.4"
+  }
+}
