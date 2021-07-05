@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss build -i src/main.css -o public/main.css --jit --minify --purge src/*.css public/*.html",
-    "watch": "tailwindcss build -i src/main.css -o public/main.css --jit --watch"
+    "dev": "live-server public",
+    "build": "rm -r public/main.css && export NODE_ENV=production && tailwindcss build -i src/main.css -o public/main.css --minify",
+    "watch": "rm -r public/main.css && tailwindcss build -i src/main.css -o public/main.css --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "live-server": "^1.2.1",
     "tailwindcss": "^2.2.4"
   }
 }

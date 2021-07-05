@@ -11,5 +11,5 @@
 }
 
 .section {
-  @apply text-gray-600 relative;
+  @apply text-gray-600 relative bg-gray-200;
 }
